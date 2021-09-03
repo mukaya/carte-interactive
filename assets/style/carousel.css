@@ -1,0 +1,79 @@
+.carousel {
+    overflow: hidden;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .carousel .carousel__item,
+  .carousel .carousel__item--hidden {
+    display: none;
+  }
+  
+  .carousel .carousel__item img {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    max-height: 300px;
+  }
+  
+  .carousel .carousel__item--visible {
+    display: block;
+    animation: fadeVisibility 0.7s;
+  }
+  
+  .carousel .carousel__actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+  }
+  
+  .carousel .carousel__actions button {
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    color:white;
+    background: red;
+    max-width: 50px;
+    animation: fadeVisibility 0.1s;
+  }
+  
+  .carousel .carousel__actions button#carousel__button--prev {
+    margin-left: 10px;
+  }
+  
+  .carousel .carousel__actions button#carousel__button--next {
+    margin-right: 10px;
+  }
+
+  #carte-map .carousel span{
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    top: 35%;
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 50px;
+    max-width: 200px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+  @keyframes fadeVisibility {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: opacity linear;
+    }
+  }

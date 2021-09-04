@@ -1,7 +1,6 @@
 #carte-map{
     background-color: #ededed;
     padding: 50px 20px;
-
 }
 
 .map{
@@ -10,7 +9,6 @@
 
 .map__image{
     width: 100%;
-    /* float: right; */
 }
 
 .map__image path{
@@ -47,6 +45,23 @@
 
 .map .ville_active{
     fill: #eeb5bb; 
+}
+
+@media only screen and (max-width: 770px) {
+
+   #carte-map .blocked{
+        display: flex;
+        flex-direction: column;
+
+   }
+
+   #carte-map .blocked .one{
+        order: 1;
+   }
+
+   #carte-map .blocked .two{
+        order: 0;
+  }
 }
 
 

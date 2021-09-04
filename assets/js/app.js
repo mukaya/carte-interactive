@@ -77,7 +77,7 @@ function moveToPrevSlide() {
 
  if(NodeList.prototype.forEach === undefined){
      NodeList.prototype.forEach = function(callback){
-         [].forEach.call(this, callback)
+         [].forEach.call(this, callback);
      }
  }
  
